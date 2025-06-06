@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EaseWalk - Adaptive Footwear</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #3f0071; /* mov �nchis */
+            --accent: #ffcc00; /* galben Lakers */
+            --dark: #220047;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+            header h1 {
+                font-size: 2.8rem;
+                font-weight: 800;
+            }
+
+            header p {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+            .hero h2 {
+                font-size: 2rem;
+                color: var(--accent);
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                color: #e6e6e6;
+            }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: var(--dark);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .card p {
+                padding: 10px 15px;
+                text-align: center;
+                color: var(--accent);
+                font-weight: bold;
+                font-size: 1rem;
+            }
+
+        footer {
+            background-color: var(--dark);
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+            footer a {
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EaseWalk</h1>
+        <p>Adaptive Footwear for Every Step Forward</p>
+    </header>
+
+    <section class="hero">
+        <h2>Empowering Movement with Comfort & Style</h2>
+        <p>
+            At EaseWalk, we create adaptive shoes for people with mobility challenges. Designed for comfort, function, and confidence,with features like wide openings, orthopedic insoles, and anti-slip soles.
+        </p>
+    </section>
+
+    <section class="gallery">
+        <div class="card">
+            <img src="images/sport-shoe.png" alt="Sport Adaptive Shoe">
+            <p>Sport Adaptive Shoe</p>
+        </div>
+        <div class="card">
+            <img src="images/elegant-shoe.png" alt="Elegant Adaptive Shoe">
+            <p>Elegant Adaptive Shoe</p>
+        </div>
+        <div class="card">
+            <img src="images/casual-shoe.png" alt="Casual Adaptive Shoe">
+            <p>Casual Adaptive Shoe</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Learn more at <a href="#">www.easewalk.com</a></p>
+        <p>&copy; 2025 MobiloStep. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
